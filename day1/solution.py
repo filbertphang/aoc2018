@@ -1,7 +1,7 @@
 # Day 1: Chronal Calibration #
-import numpy as np
+#import numpy as np
 import pandas as pd
-df = pd.read_table("input1.txt", header=None)
+df = pd.read_table("input", header=None)
 
 # Part 1
 print(df.sum(axis=0))
