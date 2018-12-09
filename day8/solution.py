@@ -1,7 +1,4 @@
 # Day 8: Memory Maneuver
-import pandas as pd
-import numpy as np
-
 def get_metadata(data, children):
     nchild = int(data[0])
     nmetadata = int(data[1])

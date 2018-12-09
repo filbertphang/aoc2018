@@ -1,6 +1,4 @@
 # Day 7: The Sum of Its Parts
-import pandas as pd
-import numpy as np
 data = open("input","r")
 steps = {}
 
