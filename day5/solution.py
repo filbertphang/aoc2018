@@ -22,11 +22,12 @@ def fullyreact(polymer):
         polymer, unchanged = react(polymer)
         if unchanged:
             break
-    return len(polymer)
+    return polymer, len(polymer)
 
 # Part 1
 polymer = initpolymer
-print "Solution to part 1:", fullyreact(polymer)
+reactedpoly, length = fullyreact(polymer)
+print "Solution to part 1:", length
 
 
 # Part 2
@@ -34,6 +35,7 @@ print "Solution to part 1:", fullyreact(polymer)
 # took 15+ minutes to run but at least it got the right answer
 polymer_list = []
 for letter in string.ascii_lowercase:
-    polymer = initpolymer.translate(None, letter).translate(None, letter.upper())
-    polymer_list.append(fullyreact(polymer))
+    pass
+    polymer = reactedpoly.translate(None, letter).translate(None, letter.upper())
+    polymer_list.append(fullyreact(polymer)[1])
 print "Solution to part 2:", min(polymer_list)
