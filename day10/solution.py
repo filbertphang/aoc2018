@@ -30,5 +30,6 @@ for line in data:
 # to see the message.
 
 positions = positions.add(velocity*10101)
-plt.scatter(positions.x, positions.y, s = 100)
+plt.scatter(positions.x, positions.y, s = 75)
+plt.axis('equal')
 plt.show()
